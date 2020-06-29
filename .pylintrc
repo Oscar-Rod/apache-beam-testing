@@ -1,0 +1,10 @@
+[FORMAT]
+max-line-length=110
+
+[MESSAGES CONTROL]
+disable=
+    pointless-statement,
+    invalid-name,
+    bad-continuation,
+    expression-not-assigned,
+    duplicate-code

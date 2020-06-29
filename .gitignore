@@ -1,0 +1,20 @@
+# OS Files
+.DS_Store
+
+# IDE Files
+.vscode
+
+# Python
+__pycache__
+
+# Env variables
+.env
+
+# Credentials
+creds/*
+
+# Logs 
+*.log
+
+# Build
+*.egg-info
