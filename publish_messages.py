@@ -1,9 +1,11 @@
 import json
+import os
 import time
+
 from google.cloud import pubsub_v1
 
-project_id = "trkkn-cloud-playground"
-topic_id = "oscar"
+project_id = os.environ["GOOGLE_CLOUD_PROJECT"]
+topic_id = os.environ["topic"].split("/")[-1]
 
 publisher = pubsub_v1.PublisherClient()
 topic_path = publisher.topic_path(project_id, topic_id)
