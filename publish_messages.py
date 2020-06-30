@@ -29,4 +29,4 @@ messages = [
 
 for message in messages:
     publisher.publish(topic_path, data=message)
-    time.sleep(1)
+    # time.sleep(1)

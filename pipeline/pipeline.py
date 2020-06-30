@@ -70,7 +70,7 @@ def execute_pipeline(pipeline, options):
 
     products = (
         sessions
-        | "add new key" >> beam.Map(lambda session: (session[1].id, session[1]))
+        | "add new key" >> beam.Map(lambda session: (session[1].id, (session[1], session[0])))
         | "group by product" >> beam.GroupByKey()
     ) | "log 2" >> beam.ParDo(Log())
 
